@@ -19,6 +19,11 @@ describe('sheLifts', function() {
       app.lessRep(1);
       expect(app._reps).toEqual(4);
     });
+
+    it('can not be set lower than 0', function() {
+      app.lessRep(1);
+      expect(app._reps).toEqual(0);
+    });
   });
 
 });
