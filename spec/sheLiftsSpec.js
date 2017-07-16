@@ -9,9 +9,15 @@ describe('sheLifts', function() {
       expect(app._reps).toEqual(0);
     });
 
-    it('can be increased with the up function', function() {
-      app.addReps(1);
+    it('can be increased with the addRep function', function() {
+      app.addRep(1);
       expect(app._reps).toEqual(1);
+    });
+
+    it('can be decreased with the lessRep function', function() {
+      app.addRep(5);
+      app.lessRep(1);
+      expect(app._reps).toEqual(4);
     });
   });
 
