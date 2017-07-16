@@ -8,6 +8,11 @@ describe('sheLifts', function() {
     it('has a default of 0', function() {
       expect(app._reps).toEqual(0);
     });
+
+    it('can be increased with the up function', function() {
+      app.addRep(1);
+      expect(app._rep).toEqual(1);
+    });
   });
 
 });
