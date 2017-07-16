@@ -7,5 +7,10 @@ SheLifts.prototype.addRep = function (num = 1) {
 };
 
 SheLifts.prototype.lessRep = function (num = 1) {
-  this._reps -= num;
+  if (this._reps <= 0) {
+    this._reps;
+  }
+  else {
+    this._reps -= num;
+  };
 };
