@@ -10,8 +10,8 @@ describe('sheLifts', function() {
     });
 
     it('can be increased with the up function', function() {
-      app.addRep(1);
-      expect(app._rep).toEqual(1);
+      app.addReps(1);
+      expect(app._reps).toEqual(1);
     });
   });
 
